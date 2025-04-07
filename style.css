@@ -1,0 +1,216 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/*estilo geral*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+html{
+    height: 500vh;
+    scroll-behavior: smooth;
+}
+/*estilo geral*/
+
+
+/*estilo menu*/
+header{
+    height: 100%;
+}
+.container{
+    padding: 40px 4%;
+    margin: 40px 4%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.flex ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.flex ul li{
+    list-style: none;
+}
+.flex ul li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: 900;
+}
+.flex ul li a:hover{
+    color: #a1a1a1;
+    font-size: 18px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.flex button{
+    padding: 13px 30px;
+    border-radius: 27px;
+    border: 0;
+    background-color: rgb(0, 0, 0);
+}
+.flex button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+}
+.flex button:hover{
+    box-shadow: 0 0 10px;
+    color: #a1a1a1;
+    cursor: pointer;
+}
+.flex button:active{
+    background-color: #5f5f5f;
+    transition: .10s;
+}
+
+/*estilo menu*/
+
+
+/*estilo pagina1*/
+ section .pagina1{
+    height: 100%;
+    display: inline-block;
+    justify-content: center;
+ }
+ .pagina1 .imagem1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+    height: 225px;
+    border-radius: 500px;
+    border: 8px #000000ab solid;
+ }
+ .pagina1 p{
+    text-align: center;
+    margin: 0px 15%;
+    padding: 0px 5px 0 0 ;
+    font-size: 25px;
+    color: #5f5f5f;
+ }
+ .pagina1 h1,h4{
+  text-align: center;
+ }
+.pagina1 h4{
+    color: #696868;
+    margin: 10px;
+}
+.pagina1 h1{
+    font-size: 38px;
+}
+/*pagina1*/
+
+
+/*estilo pagina 2*/
+.pagina2{
+    width: 100%;
+    margin-top: 200px;
+}
+.pagina2 .container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.pagina2 h1{
+    text-align: center;
+    font-size: 30px;
+}
+.pagina2 h1 span{
+    font-size: 45px;
+    color: #9b9b9b;
+}
+.pagina2 .box{
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 150px;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    background-color: #ddddddad;
+    margin:  0px 25px;
+}
+.pagina2 .box:hover{
+    box-shadow: 0 0 10px;
+    color: #5f5f5f;
+    transition: .5s;
+}
+.pagina2 .python{
+    margin: 10px 10px 10px 20px;
+}
+.pagina2 .html{
+    margin: 10px;
+}
+.pagina2 .css{
+    margin: 10px;
+}
+/*pagina2*/
+
+
+/*estilo pagina3*/
+.pagina3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.pagina3 h1{
+    text-align: center;
+    font-size: 30px;
+}
+.pagina3 h1 span{
+    font-size: 45px;
+    color: #9b9b9b;
+}
+.pagina3 .projeto1{
+    padding: 10px;
+    height: 300px;
+    width: 800px;
+    margin: 40px 4%;
+}
+.pagina3 .projeto1 .flex{
+    background-color:#ddddddad;
+    border-radius: 30px;
+}
+.pagina3 .flex:hover{
+    box-shadow: 0 0 10px;
+    transition: .5s;
+    cursor: pointer;
+    color: #2c2c2c;
+}
+.pagina3 .projeto1 img{
+    width: 300px;
+    border-radius: 15px;
+    margin: 50px 10px;
+}
+.pagina3 .projeto1 p{
+    text-align: center;
+    font-size: 20px;
+    margin: 50px 15px;
+}
+.pagina3 .projeto1 i{
+    color: #000000;
+    background-color:#dddddd;
+    border-radius: 100px;
+    padding: 10px;
+}
+.pagina3 .projeto1 a i:hover{
+    box-shadow: 0 0 10px;
+    transition: .5s;
+    cursor: pointer;
+    color: #2c2c2c;
+}    
+.pagina3 .projeto1 a {
+    color: #000000;
+    text-decoration: none;
+}
+.pagina3 .projeto1 .links{
+    margin: 20px;
+    text-align: left;
+}
