@@ -1,0 +1,526 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/*estilo geral*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    background-color: rgb(44, 44, 44);
+}
+html{
+    height: 500vh;
+    scroll-behavior: smooth;
+}
+/*estilo geral*/
+
+
+/*estilo menu*/
+header{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    padding: 40px 4%;
+    margin: 40px 2%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.flex ul li{
+    list-style: none;
+}
+.flex ul li a{
+    text-decoration: none;
+    color: #f7f7f7;
+    font-weight: 900;
+}
+.flex ul li a:hover{
+    color: #f5f1f1;
+    font-size: 18px;
+    transition: .2s;
+    cursor: pointer;
+    border-bottom: rgb(252, 94, 3) solid;
+}
+h2{
+    color: #dddddd;
+    margin-right: 50px;
+}
+h2 span{
+    font-size: 45px;
+    color: rgb(252, 94, 3);
+}
+
+/*estilo menu*/
+
+
+/*estilo pagina1*/
+ section .pagina1{
+    display: flex;
+    justify-content: space-around; 
+    width: 100%; 
+ }
+ .esquerdo1{
+    margin: 40px 80px;
+    background-image: url(image/foto.jpg); 
+    width: 90%;
+    height: 300px;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position: 700px 0px ; 
+
+  
+ }
+ 
+ .pagina1 .esquerdo1 p{
+    font-size: 18px;
+    color: #cfcfcf;
+    height: 80px;
+    width: 410px;
+ }
+
+.pagina1 .esquerdo1 h4{
+    color: #777676;
+    text-align: left;
+    background-color:transparent;
+ 
+}
+.pagina1 .esquerdo1 h1{
+    font-size: 35px;
+    color: #e0e5e9;
+    background-color:transparent;
+}
+
+section .esquerdo1 button{
+    padding: 13px 30px;
+    border-radius: 13px;
+    border: 0;
+    background-color: rgb(252, 94, 3);
+    margin-top: 15px;
+    box-shadow: 2px 2px #e0e5e9;;
+
+}
+section .esquerdo1 button {
+    background-color: rgb(252, 94, 3);
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    font-weight: 900;
+}
+section .esquerdo1 button:hover{
+    cursor: pointer;
+}
+section .esquerdo1 button:active{
+    transform:scale(0.5);
+    transition: .40s;
+
+}
+
+.linhatemp{
+    float: right;
+    margin: 0 10%;
+    font-size: 15px;    
+}
+
+.linhatemp1{
+    color: #dddddd;
+    cursor: pointer;
+    font-size: 15px;
+}
+.linhatemp1 .span1{
+    font-size: 20px;
+    color: rgb(252, 94, 3);
+    font-weight: bold;
+    font-size: 30px;
+}
+.evento{
+    text-align: right;
+    margin-right: 10px;
+}
+.evento1{
+    display: grid;
+    grid-template-columns: repeat(2 , 20px);
+    gap: 100px;
+    margin-top: 8px;
+}
+
+.evento1 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 12px;
+}
+
+.linhatemp2{
+    opacity: 0;
+    color: #dddddd;
+    border-right: 5px solid rgb(252, 94, 3 );
+    cursor: pointer;
+
+}
+.linhatemp2 p{
+    width: 80px;
+    margin-top: 15px;
+}
+.linhatemp3 p{
+    width: 80px;
+    margin-top:16px;
+}
+.linhatemp4 p{
+    width: 80px;
+    margin-top:18px;
+}
+.linhatemp3{
+    opacity: 0;
+    color: #dddddd;
+    border-right: 5px solid rgb(252, 94, 3 );
+    cursor: pointer;
+
+}
+.linhatemp4{
+    opacity: 0;
+    color: #dddddd;
+    border-right: 5px solid rgb(252, 94, 3 );
+    cursor: pointer;
+
+}
+.linhatemp:hover .linhatemp2{
+    cursor: pointer;
+    opacity: 100%;
+    transition: 1s ease;
+}
+.linhatemp:hover .linhatemp3{
+    cursor: pointer;
+    opacity: 100%;
+    transition: 3s ease;
+
+}
+.linhatemp:hover .linhatemp4{
+     cursor: pointer;
+    opacity: 100%;
+    transition: 5s ease;
+}
+.graficos{
+    float: left;
+    margin: 20px 80px
+}
+.graficos p{
+    text-align: center;
+    font-size: 20px;
+   color: #777676;
+   font-weight: bold;
+
+}
+
+.extras{
+    color: #e0e5e9;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 19px;
+}
+.extras img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0% {
+        top: 0;
+    }
+    100%{
+        top: 17px;
+    }
+}
+.extra1 img{
+  width: 130px;
+  height: 90px;
+
+}
+.extra2 img{
+  width: 150px;
+  height: 100px;
+}
+
+.caixa{
+    width: 180px;
+    height:180px;
+    color: #dddddd;
+     background-color: #3a3939;
+    margin: 0 650px;
+    border: 0;
+    border-radius: 30px;
+    padding: 30px 30px;
+    box-shadow: 5px 5px rgb(252, 94, 3 );
+}
+.caixa p{
+  width: 100px;
+  margin: 20px 15px;
+    background-color: #3a3939;
+}
+.caixa p1{
+  margin: 15px 39px;
+  width: 100px;
+  font-size: 50px;
+  background-color: #3a3939;
+  font-weight: bold;
+
+}
+
+
+/*pagina1*/
+
+
+
+/*estilo pagina 2*/
+.pagina2{
+    width: 100%;
+    margin-top: 300px;
+}
+.pagina2 .container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.pagina2 h1{
+    text-align: center;
+    font-size: 30px;
+     color: #e0e5e9;
+}
+.pagina2 h1 span{
+    font-size: 45px;
+    color: rgb(252, 94, 3 );
+}
+.pagina2 .box{
+    display: grid;
+    grid-template-columns: repeat(5);
+    margin: 0 10px;
+    padding: 35px;
+    border-radius: 30px;
+    justify-content: center;
+        box-shadow: 0 0 8px white;
+}
+.pagina2 .box img{
+    width: 110px;
+    height: 120px;
+}
+.pagina2 .box h3{
+    color: #dddddd;
+    margin: 10px 22px;
+}
+
+ .box:hover{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    padding: 45px;
+
+}
+.pagina2 .box > #css{
+    width: 120px;
+    height: 110px;
+    margin-top: 10px;
+}
+#html img{
+    margin-top: 20px;
+    width: 115px;
+    height: 100px;
+}
+#html h3{
+ margin: 10px 30px ;
+
+}
+#css h3{
+    margin-left: 40px;
+    position:relative;
+}
+#js h3{
+    margin: 0 10px;
+}
+#js img{
+    height: 140px;
+    width: 125px;
+}
+#mysql img{
+    width: 120px;
+    height:120px;
+}
+
+
+/*pagina2*/
+
+
+/*estilo pagina3*/
+.pagina3{
+   width: 100%;
+   margin-top: 200px;
+}
+.pagina3 h1{
+    text-align: center; 
+    color:  #dddddd;
+    font-size: 30px;
+}
+.pagina3 h1 span{
+    font-size: 50px;
+    color: rgb(252, 94, 3 );
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,30px);
+    justify-content: space-between;
+    width: 700px;
+    margin: 60px 50px;
+}
+.projeto1{
+    width: 550px;
+    height: 190px;
+    margin: 20px 50px;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.projeto1 img{
+    height: 170px;
+    width: 310px;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+.projeto1 p{
+  background-color: #f7f7f7;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 10px; 
+}
+.projeto1  p button{
+    background-color: rgb(252, 94, 3 );
+    width: 150px;
+    border: 0;
+    border-radius: 30px;
+    color: #f7f7f7;
+    margin-top: 10px;
+}
+.projeto1  p a {
+    text-decoration: none;
+    background-color: rgb(252, 94, 3 );
+    color: #f7f7f7;
+    border-radius: 30px;
+}
+
+/*página3*/
+
+/*pagina4*/
+
+.pagina4{
+    width: 100%;
+    margin-top: 300px;
+    background-image: url(image/Untitled.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1000px;
+    background-position: 0px 60px;
+}
+.pagina4 h1{
+    text-align: center; 
+    color:  #dddddd;
+    font-size: 30px;
+}
+.pagina4 h1 span{
+    font-size: 50px;
+    color: rgb(252, 94, 3 );
+}
+.pagina4 form{
+    width: 500px;
+    margin:  100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 60px;
+    background-color: transparent;
+    
+}
+.pagina4 form input{
+    padding: 20px 50px;
+    border: 0;
+    background-color: #3a3939;
+    border-radius: 60px;
+    font-size: 19px;
+    box-shadow: 5px 5px rgb(252, 94, 3 );
+    color: #dddddd;
+    
+}
+.pagina4 form input:active{
+    box-shadow: 0 0 8px;
+}
+.pagina4 form input::placeholder{    
+    color:#cfcfcf8a;
+}
+.pagina4 form textarea{
+    padding: 70px 50px;
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 5px 5px rgb(252, 94, 3 );
+    color: #dddddd;
+}
+.pagina4 form textarea::placeholder{
+    color:#cfcfcf8a;
+    font-size: 20px;
+    text-align: left;
+}
+.pagina4 .enviar{
+    background-color: rgb(252, 94, 3 );
+    padding: 15px 60px;
+    margin: 0 655px;
+    border: 0;
+    border-radius: 60px;
+    box-shadow: 3px 3px white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*pagina4*/
+
+/*pagina5*/
+.pagina5{
+    width: 100%;
+}
+.pagina5 h1{
+     text-align: center; 
+    color:  #dddddd;
+    font-size: 30px;
+}
+.pagina5 h1 span{
+    font-size: 50px;
+    color: rgb(252, 94, 3 );
+}
+
+.sobremim{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 300px;
+    width: 900px;
+    background-image: url(image/Untitled.png);
+    
+}
+.sobremim p{
+    width: 400px;
+    color: #dddddd;
+    font-size: 20px;
+    height: 200px;
+}
+.sobremim p::first-line{
+    color: rgb(252, 94, 3 );
+     font-size: 25px;
+}
+.sobremim img{
+    width: 400px;
+    height: 340px;
+    margin-left: 30px;
+}
